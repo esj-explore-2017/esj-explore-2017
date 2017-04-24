@@ -1,0 +1,81 @@
+
+// LEXIQUE
+.lexique-wrapper
+  position: fixed
+  opacity: 0
+  top: 0
+  right: 0
+  height: 100%
+  width: 20%
+  transform: translatex(70%)
+  transition: transform 0.6s, opacity 0.3s
+  overflow: hidden
+  z-index : 99999
+  @media screen and (max-width: 768px)
+    width: 100%
+
+.lexique-button
+  // background: url('../medias/lexique-bouton.png') no-repeat
+  position: absolute
+  display: inline-block
+  top: 10%
+  left: 0
+  width: 30%
+  height: 30%
+  background-size: contain
+  background-color: transparent
+  cursor: pointer
+  @media screen and (max-width: 768px)
+    display: none
+  img
+    width: 100%
+
+.lexique-body
+  position: absolute
+  right: 0
+  width: 70%
+  height: 100%
+  background-color: $jaune
+  padding: 5%
+  overflow-y: auto
+  overflow-x: hidden
+  font-family: 'Open Sans', sans-serif
+
+.lexique-xs-close
+  text-align: right
+  position: fixed
+  margin-left: auto
+  margin-right: auto
+  top: 0
+  right: 5px
+  box-shadow: 2px 2px 1px black
+  border-radius: 5px
+  padding: 2px 5px
+  background-color: $jaune
+  font-weight: bold
+  cursor: pointer
+  @media screen and (min-width: 769px)
+    display: none
+
+.definition
+  margin-bottom: 4em
+
+.mot-name
+  font-size: 2em
+  margin-bottom: 0.5em
+  text-align: center
+
+.mot-def
+  font-size: 1em
+
+.lexique-open
+  transform: none
+
+// .lexique-hidden
+//   opacity: 0
+
+a.lien-lexique
+  background-color: #FFEA29
+  color: #000
+a.lien-lexique:hover
+  text-decoration: none

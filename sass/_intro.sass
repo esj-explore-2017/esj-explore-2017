@@ -1,0 +1,110 @@
+@import carte-int
+
+p
+  font-size: 1.3em
+  line-height: 1.6em
+  font-family: 'Futura T Light', sans-serif
+
+.intro
+  img#intro
+    width: 100%
+    height: auto
+    z-index: 2
+    position: relative
+
+  .space
+    margin-top: 5%
+
+  .top
+    position: relative
+    z-index: 3
+    @media screen and (min-width: 992px)
+      margin-top: -250px
+
+  .first::first-letter
+    color: #FFEA29
+    font-size: 2em
+
+  .wrapper
+    width: 100%
+
+
+
+  .legend
+    font-style: italic
+    font-size: 1.5em
+
+  .legend-intro-1
+    transform: translateY(-80%)
+    @media screen and (max-width: 768px)
+      width: 50%
+      margin-top: -27%
+      margin-right: 5px
+      margin-left: auto
+
+  .legend-intro-2
+    @media screen and (max-width: 768px)
+      width: 50%
+      margin-top: -15%
+      margin-right: 5px
+      margin-left: auto
+
+
+  .text-right
+    text-align: right
+    @media screen and (max-width: 768px)
+      text-align: left
+
+  .text-right
+    margin-right: 20px
+
+  .cercle-exergue
+    width: 150px
+    height: 150px
+    background-color: $jaune
+    border-radius: 50%
+    opacity: 0.9
+
+  .exergue
+    font-size: 1.8em
+    text-align: center
+
+  .vertical-center
+    margin-top: 30%
+    transform: translateY(-50%)
+    @media screen and (max-width: 768px)
+      display: none
+
+
+  // IMAGES
+  #intro1
+    position: relative
+    z-index: 1
+    @media screen and (min-width: 992px)
+      margin-top: -264px
+
+  .image
+    padding: 0
+
+  .video-intro
+    width: 90%
+  .medaillon
+    width: 80%
+    margin-top: 30px
+    border-radius: 50%
+    border : solid 5px $jaune
+    box-shadow: 5px 5px 3px black
+    transition: 0.5s
+
+    @media screen and (max-width: 992px)
+      width: 120px
+
+  // #parallax-intro-4
+  //   background: url('../medias/intro_4.png') center fixed no-repeat
+  //   @media screen and (max-width: 992px)
+  //     background: none
+  //
+  // #img-intro-4
+  //   opacity: 0
+  //   @media screen and (max-width : 992px)
+  //     opacity: 1
