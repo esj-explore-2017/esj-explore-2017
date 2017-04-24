@@ -172,6 +172,8 @@ p {
       margin-top: -264px; } }
 .intro .image {
   padding: 0; }
+.intro .infog-intro {
+  width: 90%; }
 .intro .video-intro {
   width: 90%; }
 .intro .medaillon {
@@ -367,7 +369,7 @@ p {
       left: 50%;
       transform: translateX(-50%); }
     .chap2 .FF .graph {
-      width: 60%;
+      width: 90%;
       margin-top: 50px;
       margin-bottom: 40px; }
       @media screen and (max-width: 767px) {
@@ -671,6 +673,12 @@ p {
   transform: translate(105%, -140%); }
 .chap4 .chap4-hack-exergue {
   transform: translateY(30px); }
+.chap4 .juxtapose-wrapper {
+  height: 500px;
+  overflow-y: hidden; }
+  @media screen and (max-device-width: 767px) {
+    .chap4 .juxtapose-wrapper {
+      height: 250px; } }
 
 .lexique-wrapper {
   position: fixed;
