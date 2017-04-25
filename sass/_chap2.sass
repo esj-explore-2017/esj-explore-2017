@@ -1,11 +1,35 @@
 
 .chap2
   margin-top: 15px
+  @media screen and (min-device-width: 768px) and (max-device-width: 991px)
+    margin-bottom: 80px
+
+  #ch2-legend-hack
+    @media screen and (min-device-width: 768px) and (max-device-width: 991px)
+      top: 80%
 
   #chap2-hack
     transform: translate(-50%,20px)
+
   #chap2-hack2
     transform: translate(-50%, -50px)
+    @media screen and (min-device-width: 768px) and (max-device-width: 991px)
+      width: 100px
+
+  #ch2-hack-medaillon
+    &:hover
+      transform: translateX(-50%) scale(1.05)
+      @media (max-device-width: 991px)
+        transform: scale(1.05)
+
+  #ch2-doublep-hack2
+    @media screen and (min-device-width: 768px) and (max-device-width: 991px)
+      width: 100%
+      padding: 0 15px
+      text-align: left
+      top: 200px
+
+
   .FF
     width: 100%
     margin: 0px
@@ -83,21 +107,22 @@
     .bigimg
       @media screen and (max-device-width: 767px)
         text-align: center
-      @media (max-device-width: 992px)
+      @media (max-device-width: 991px)
         left: 0
         transform: translateX(0%)
 
 
     .bigimg-img
       position: relative
-      width: 60%
+      width: 100%
       left: 50%
       transform: translateX(-50%)
-      @media (max-device-width: 992px)
+      @media (max-device-width: 991px)
         left: 0
         transform: translateX(0%)
       @media (max-device-width: 767px)
         position: static
+
 
     .ff04
       @media screen and (max-width: 767px)
@@ -116,7 +141,7 @@
     .legendrond
       position: relative
       margin-top: 110px
-      @media (max-device-width: 992px)
+      @media (max-device-width: 991px)
         text-align: center
         margin-top: 120px
       @media (max-device-width: 360px)
@@ -171,14 +196,19 @@
       text-align: center
       left: 50%
       transform: translateX(-50%)
-      @media screen and (min-device-width: 768px) and (max-device-width: 992px)
-        top: 70%
-        left: 50%
+      @media screen and (min-device-width: 768px) and (max-device-width: 991px)
+        top: 77%
+        left: 31%
         transform: translateX(-50%)
-        bottom: 150px
       @media screen and (max-device-width: 767px)
         display: none
 
+    #ch2-doublep-hack
+      @media screen and (min-device-width: 768px) and (max-device-width: 991px)
+        top: 330px
+        padding-left: 20px
+        width: 100%
+        font-size: 1em
 
     .doublep
       position: absolute
@@ -187,10 +217,6 @@
       width: 50%
       left: 50%
       transform: translateX(-50%)
-      @media screen and (min-device-width: 768px) and (max-device-width: 992px)
-        top: 100px
-        padding-left: 20px
-        width: 70%
       @media screen and (max-device-width: 767px)
         position: static
         width: 100%
@@ -199,11 +225,8 @@
         transform: none
 
 
-
     .cyclistes
-      width: 40%
-      margin: 20px
-
+      width: 100%
 
     .double01
       width: 100%
@@ -249,19 +272,14 @@
       text-align: center
       @media screen and (max-device-width: 767px)
         display: none
-      @media (max-device-width: 992px)
+      @media (max-device-width: 991px)
         bottom: 250px
 
     .dernierep
-      @media screen and (min-width: 768px)
+      @media screen and (min-device-width: 992px)
         transform: translateY(-100%)
-
-
-  .parallax-chap2
-    @media screen and (max-width: 992px)
-      background: none
 
   .ch2-diapo
     opacity: 0
-    @media screen and (max-width : 992px)
+    @media screen and (max-width : 991px)
       opacity: 1

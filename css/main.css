@@ -240,15 +240,37 @@ p {
 .chap1 video {
   width: 100%;
   height: auto; }
+.chap1 .video-ch1 {
+  width: 90%; }
 .chap1 .column {
   padding: 0 5px; }
 
 .chap2 {
   margin-top: 15px; }
+  @media screen and (min-device-width: 768px) and (max-device-width: 991px) {
+    .chap2 {
+      margin-bottom: 80px; } }
+  @media screen and (min-device-width: 768px) and (max-device-width: 991px) {
+    .chap2 #ch2-legend-hack {
+      top: 80%; } }
   .chap2 #chap2-hack {
     transform: translate(-50%, 20px); }
   .chap2 #chap2-hack2 {
     transform: translate(-50%, -50px); }
+    @media screen and (min-device-width: 768px) and (max-device-width: 991px) {
+      .chap2 #chap2-hack2 {
+        width: 100px; } }
+  .chap2 #ch2-hack-medaillon:hover {
+    transform: translateX(-50%) scale(1.05); }
+    @media (max-device-width: 991px) {
+      .chap2 #ch2-hack-medaillon:hover {
+        transform: scale(1.05); } }
+  @media screen and (min-device-width: 768px) and (max-device-width: 991px) {
+    .chap2 #ch2-doublep-hack2 {
+      width: 100%;
+      padding: 0 15px;
+      text-align: left;
+      top: 200px; } }
   .chap2 .FF {
     width: 100%;
     margin: 0px;
@@ -318,16 +340,16 @@ p {
     @media screen and (max-device-width: 767px) {
       .chap2 .FF .bigimg {
         text-align: center; } }
-    @media (max-device-width: 992px) {
+    @media (max-device-width: 991px) {
       .chap2 .FF .bigimg {
         left: 0;
         transform: translateX(0%); } }
     .chap2 .FF .bigimg-img {
       position: relative;
-      width: 60%;
+      width: 100%;
       left: 50%;
       transform: translateX(-50%); }
-      @media (max-device-width: 992px) {
+      @media (max-device-width: 991px) {
         .chap2 .FF .bigimg-img {
           left: 0;
           transform: translateX(0%); } }
@@ -345,7 +367,7 @@ p {
     .chap2 .FF .legendrond {
       position: relative;
       margin-top: 110px; }
-      @media (max-device-width: 992px) {
+      @media (max-device-width: 991px) {
         .chap2 .FF .legendrond {
           text-align: center;
           margin-top: 120px; } }
@@ -393,15 +415,20 @@ p {
       text-align: center;
       left: 50%;
       transform: translateX(-50%); }
-      @media screen and (min-device-width: 768px) and (max-device-width: 992px) {
+      @media screen and (min-device-width: 768px) and (max-device-width: 991px) {
         .chap2 .FF .doublelegend {
-          top: 70%;
-          left: 50%;
-          transform: translateX(-50%);
-          bottom: 150px; } }
+          top: 77%;
+          left: 31%;
+          transform: translateX(-50%); } }
       @media screen and (max-device-width: 767px) {
         .chap2 .FF .doublelegend {
           display: none; } }
+    @media screen and (min-device-width: 768px) and (max-device-width: 991px) {
+      .chap2 .FF #ch2-doublep-hack {
+        top: 330px;
+        padding-left: 20px;
+        width: 100%;
+        font-size: 1em; } }
     .chap2 .FF .doublep {
       position: absolute;
       top: 610px;
@@ -409,11 +436,6 @@ p {
       width: 50%;
       left: 50%;
       transform: translateX(-50%); }
-      @media screen and (min-device-width: 768px) and (max-device-width: 992px) {
-        .chap2 .FF .doublep {
-          top: 100px;
-          padding-left: 20px;
-          width: 70%; } }
       @media screen and (max-device-width: 767px) {
         .chap2 .FF .doublep {
           position: static;
@@ -422,8 +444,7 @@ p {
           padding-right: 15px;
           transform: none; } }
     .chap2 .FF .cyclistes {
-      width: 40%;
-      margin: 20px; }
+      width: 100%; }
     .chap2 .FF .double01 {
       width: 100%;
       position: relative; }
@@ -464,25 +485,22 @@ p {
       @media screen and (max-device-width: 767px) {
         .chap2 .FF .dernierelegend {
           display: none; } }
-      @media (max-device-width: 992px) {
+      @media (max-device-width: 991px) {
         .chap2 .FF .dernierelegend {
           bottom: 250px; } }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-device-width: 992px) {
       .chap2 .FF .dernierep {
         transform: translateY(-100%); } }
-  @media screen and (max-width: 992px) {
-    .chap2 .parallax-chap2 {
-      background: none; } }
   .chap2 .ch2-diapo {
     opacity: 0; }
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 991px) {
       .chap2 .ch2-diapo {
         opacity: 1; } }
 
 .chap3 .chap3-hack {
   padding-left: 15px;
   padding-right: 15px; }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .chap3 .ch3_exergue {
     display: none; } }
 .chap3 video {
@@ -505,7 +523,7 @@ p {
 .chap3 .metier {
   text-align: center;
   margin-top: 80%; }
-  @media screen and (max-device-width: 767px) {
+  @media screen and (max-device-width: 991px) {
     .chap3 .metier {
       margin-top: 0; } }
 .chap3 .avant {
@@ -561,12 +579,21 @@ p {
   background-attachment: fixed; }
 .chap3 .infographie {
   width: 100%; }
+.chap3 .ch3_gif {
+  width: 50%; }
+@media screen and (min-device-width: 768px) and (max-device-width: 991px) {
+  .chap3 .ch3-hack-p {
+    width: 50%;
+    font-size: 1em; } }
 .chap3 .juxtapose-wrapper {
   height: 950px;
   overflow-y: hidden; }
   @media screen and (max-device-width: 767px) {
     .chap3 .juxtapose-wrapper {
       height: 250px; } }
+  @media screen and (min-device-width: 768px) and (max-device-width: 991px) {
+    .chap3 .juxtapose-wrapper {
+      height: 500px; } }
 @media screen and (max-device-width: 767px) {
   .chap3 .chap3-profil-img {
     width: 100%;
@@ -662,12 +689,18 @@ p {
 .velo-hidden {
   opacity: 0; }
 
+@media screen and (min-device-width: 768px) and (max-device-width: 991px) {
+  .chap4 {
+    margin-top: 80px; } }
 .chap4 .chap4-hack {
   padding-left: 0;
   padding-right: 0; }
 @media screen and (max-device-width: 767px) {
   .chap4 .triangle-selle {
     display: none; } }
+@media screen and (min-device-width: 768px) and (max-device-width: 991px) {
+  .chap4 .triangle-selle {
+    float: right; } }
 .chap4 #home_ch_4 {
   position: relative;
   z-index: 2; }
@@ -676,7 +709,7 @@ p {
   margin-top: -266px;
   position: relative;
   z-index: 1; }
-  @media screen and (max-device-width: 767px) {
+  @media screen and (max-device-width: 991px) {
     .chap4 #img_cycliste_haut {
       display: none; } }
 .chap4 .first_par {
@@ -710,6 +743,12 @@ p {
     width: 120px; } }
 .chap4 .ch4_gif {
   margin-top: 20%; }
+  @media screen and (min-device-width: 768px) and (max-device-width: 991px) {
+    .chap4 .ch4_gif {
+      width: 50%;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto; } }
 .chap4 #triangle_img6 {
   z-index: 3;
   margin-top: -6%;
@@ -754,6 +793,11 @@ p {
   margin-left: 10%;
   width: 10%;
   transform: translate(105%, -140%); }
+  @media screen and (min-device-width: 768px) and (max-device-width: 991px) {
+    .chap4 .chap4-legend-wrapper {
+      transform: translate(70%, -90%);
+      width: 15%;
+      font-size: 0.9em; } }
 .chap4 .chap4-hack-exergue {
   transform: translateY(30px); }
 .chap4 .juxtapose-wrapper {
@@ -762,6 +806,9 @@ p {
   @media screen and (max-device-width: 767px) {
     .chap4 .juxtapose-wrapper {
       height: 250px; } }
+  @media screen and (min-device-width: 768px) and (max-device-width: 991px) {
+    .chap4 .juxtapose-wrapper {
+      height: 300px; } }
 
 .lexique-wrapper {
   position: fixed;
@@ -884,9 +931,10 @@ html, body {
     @media screen and (max-width: 767px) {
       #navbar li {
         margin-right: 0; } }
-  #navbar a {
-    color: black;
-    font-weight: bold; }
+
+a {
+  color: black;
+  font-weight: bold; }
 
 p {
   font-family: "Futura T Light", sans-serif; }
@@ -897,10 +945,12 @@ p {
   border-radius: 50%;
   border: solid 5px #feea28;
   box-shadow: 5px 5px 3px black;
-  margin-bottom: 15px; }
-  .medaillon:hover {
-    filter: none;
-    transform: scale(1.05); }
+  margin-bottom: 15px;
+  filter: none;
+  transform: scale(1.05); }
+  @media screen and (max-width: 991px) {
+    .medaillon {
+      max-width: 130px; } }
 
 .main-wrapper {
   width: 100%;

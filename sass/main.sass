@@ -56,9 +56,10 @@ html, body
     @media screen and (max-width: 767px)
       margin-right: 0
 
-  a
-    color: black
-    font-weight: bold
+a
+  color: black
+  font-weight: bold
+
 
 
 
@@ -78,9 +79,12 @@ p
   border : solid 5px $jaune
   box-shadow: 5px 5px 3px black
   margin-bottom: 15px
+  @media screen and (max-width: 991px)
+    max-width: 130px
   &:hover
-    filter: none
-    transform: scale(1.05)
+  filter: none
+  transform: scale(1.05)
+
 
 .main-wrapper
   width: 100%
