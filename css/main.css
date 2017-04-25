@@ -258,7 +258,8 @@ p {
 
 .infog-arbre-btn {
   cursor: pointer;
-  transition: 1.5s; }
+  transition: 1.5s;
+  position: relative; }
 
 .infog-arbre-btn-1 {
   top: 58%;
@@ -272,8 +273,14 @@ p {
   transform: rotateY(180DEG);
   opacity: 0; }
 
+.infog-btn-effect-wrapper {
+  position: absolute;
+  border-radius: 50%; }
+
 .infog-btn-effect {
   position: absolute;
+  top: 0;
+  left: 0;
   border-radius: 50%;
   background-color: #feea28;
   opacity: 0;
