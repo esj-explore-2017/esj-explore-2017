@@ -73,6 +73,16 @@ $(document).ready(function(){
         }
       };
 
+// VELO INTERACTIF
+//CARTE INTERACTIVE
+      for ( let i = 1 ; i<= 8 ; i++){
+          $('#velo-int-btn-' + i).click(function(){
+            $('.velo-int-img').addClass('velo-hidden')
+            $('#velo-int-img-' + i).removeClass('velo-hidden')
+          });
+      };
+
+
 //MINIATURES VIDEO
     $('.miniature-video').click(function(){
         $(this).fadeOut();
