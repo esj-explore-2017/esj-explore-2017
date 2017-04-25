@@ -245,6 +245,74 @@ p {
 .chap1 .column {
   padding: 0 5px; }
 
+.infog-arbre-wrapper {
+  position: relative;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid black 2px;
+  overflow: hidden; }
+
+.infog-arbre-bg {
+  width: 100%; }
+
+.infog-arbre-btn {
+  cursor: pointer;
+  transition: 1.5s; }
+
+.infog-arbre-btn-1 {
+  top: 58%;
+  left: 18%; }
+
+.infog-arbre-btn-2 {
+  top: 3.5%;
+  left: 9.25%; }
+
+.infog-hidden {
+  transform: rotateY(180DEG);
+  opacity: 0; }
+
+.infog-btn-effect {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #feea28;
+  opacity: 0;
+  animation-name: btn-effect;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; }
+
+@keyframes btn-effect {
+  from, 30%, to {
+    opacity: 0; }
+  50% {
+    opacity: 0.3; } }
+.infog-arbre-btn3 {
+  position: absolute;
+  top: 31%;
+  left: 36%;
+  opacity: 0;
+  cursor: pointer; }
+
+.infog-video-wrapper {
+  width: 75%;
+  position: absolute;
+  top: 29%;
+  left: 12.5%;
+  transition: 1.5s; }
+  .infog-video-wrapper .infog-video {
+    width: 100%; }
+  .infog-video-wrapper .infog-video-close-btn {
+    font-size: 1.5em;
+    background-color: #feea28;
+    padding: 5px 10px;
+    position: absolute;
+    top: -35px;
+    right: 0;
+    cursor: pointer; }
+
+.infog-wrapper-hidden {
+  transform: translateX(150%); }
+
 .chap2 {
   margin-top: 15px; }
   @media screen and (min-device-width: 768px) and (max-device-width: 991px) {
@@ -260,11 +328,13 @@ p {
     @media screen and (min-device-width: 768px) and (max-device-width: 991px) {
       .chap2 #chap2-hack2 {
         width: 100px; } }
-  .chap2 #ch2-hack-medaillon:hover {
-    transform: translateX(-50%) scale(1.05); }
-    @media (max-device-width: 991px) {
-      .chap2 #ch2-hack-medaillon:hover {
-        transform: scale(1.05); } }
+  .chap2 #ch2-hack-medaillon {
+    max-width: 180px; }
+    .chap2 #ch2-hack-medaillon:hover {
+      transform: translateX(-50%) scale(1.05); }
+      @media (max-device-width: 991px) {
+        .chap2 #ch2-hack-medaillon:hover {
+          transform: scale(1.05); } }
   @media screen and (min-device-width: 768px) and (max-device-width: 991px) {
     .chap2 #ch2-doublep-hack2 {
       width: 100%;
@@ -397,12 +467,6 @@ p {
           margin-bottom: 5px; } }
     .chap2 .FF .legendGphoto {
       text-align: center; }
-    .chap2 .FF .infog-arbre {
-      width: 80%; }
-      @media screen and (max-width: 767px) {
-        .chap2 .FF .infog-arbre {
-          width: 115%;
-          transform: translateX(-15px); } }
     .chap2 .FF .double {
       padding-left: 0;
       padding-right: 0;

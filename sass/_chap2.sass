@@ -1,4 +1,4 @@
-
+@import infog-arbre
 .chap2
   margin-top: 15px
   @media screen and (min-device-width: 768px) and (max-device-width: 991px)
@@ -17,6 +17,7 @@
       width: 100px
 
   #ch2-hack-medaillon
+    max-width: 180px
     &:hover
       transform: translateX(-50%) scale(1.05)
       @media (max-device-width: 991px)
@@ -173,15 +174,6 @@
 
     .legendGphoto
       text-align: center
-
-    .infog-arbre
-      width: 80%
-      @media screen and (max-width: 767px)
-        width: 115%
-        transform: translateX(-15px)
-
-
-
 
     .double
       padding-left: 0

@@ -74,14 +74,24 @@ $(document).ready(function(){
       };
 
 // VELO INTERACTIF
-//CARTE INTERACTIVE
-      for ( let i = 1 ; i<= 8 ; i++){
-          $('#velo-int-btn-' + i).click(function(){
-            $('.velo-int-img').addClass('velo-hidden')
-            $('#velo-int-img-' + i).removeClass('velo-hidden')
-          });
-      };
+    for ( let i = 1 ; i<= 8 ; i++){
+        $('#velo-int-btn-' + i).click(function(){
+          $('.velo-int-img').addClass('velo-hidden')
+          $('#velo-int-img-' + i).removeClass('velo-hidden')
+        });
+    };
 
+
+// INFOGRAPHE ARBRE
+  $('.infog-arbre-btn').click(function(){
+    $(this).toggleClass('infog-hidden')
+  });
+  $(".infog-arbre-btn3").click(function(){
+    $('.infog-video-wrapper').removeClass('infog-wrapper-hidden')
+  });
+  $('.infog-video-close-btn').click(function(){
+    $('.infog-video-wrapper').addClass('infog-wrapper-hidden')
+  })
 
 //MINIATURES VIDEO
     $('.miniature-video').click(function(){

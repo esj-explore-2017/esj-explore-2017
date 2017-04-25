@@ -1,0 +1,71 @@
+.infog-arbre-wrapper
+  position: relative
+  width: 80%
+  margin-left: auto
+  margin-right: auto
+  border : solid black 2px
+  overflow: hidden
+
+
+.infog-arbre-bg
+  width: 100%
+
+.infog-arbre-btn
+  cursor: pointer
+  transition: 1.5s
+
+.infog-arbre-btn-1
+  top: 58%
+  left: 18%
+
+.infog-arbre-btn-2
+  top: 3.5%
+  left: 9.25%
+
+.infog-hidden
+  transform: rotateY(180DEG)
+  opacity: 0
+
+.infog-btn-effect
+  position: absolute
+  border-radius: 50%
+  background-color: $jaune
+  opacity: 0
+  animation-name: btn-effect
+  animation-duration: 3s
+  animation-iteration-count: infinite
+
+@keyframes btn-effect
+  from, 30%, to
+    opacity: 0
+  50%
+    opacity: 0.3
+
+
+.infog-arbre-btn3
+  position: absolute
+  top: 31%
+  left: 36%
+  opacity: 0
+  cursor: pointer
+
+.infog-video-wrapper
+  width: 75%
+  position: absolute
+  top: 29%
+  left: 12.5%
+  transition: 1.5s
+
+  .infog-video
+    width: 100%
+  .infog-video-close-btn
+    font-size: 1.5em
+    background-color: $jaune
+    padding: 5px 10px
+    position: absolute
+    top: -35px
+    right: 0
+    cursor: pointer
+
+.infog-wrapper-hidden
+  transform: translateX(150%)
