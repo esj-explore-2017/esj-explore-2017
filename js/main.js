@@ -99,5 +99,10 @@ $(document).ready(function(){
     })
 
 
+ // LAZYLOAD
+ $("img.lazy").lazyload({
+     effect : "fadeIn",
+     threshold : 200
+ });
 
 });
