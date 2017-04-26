@@ -29,12 +29,13 @@ html, body
 
 .legend
   font-style: italic
-  font-size: 1.3em
+  font-size: 1.2em
   text-align: center
 
 #navbar
   padding-top: 10px
-  background: linear-gradient(#debb15, $jaune)
+  background-color: $jaune
+  // background: linear-gradient(#debb15, $jaune)
   font-size: 1.8em
   position: fixed
   top: 0
@@ -79,11 +80,12 @@ p
   border : solid 5px $jaune
   box-shadow: 5px 5px 3px black
   margin-bottom: 15px
+  max-width: 155px
   @media screen and (max-width: 991px)
     max-width: 130px
   &:hover
-  filter: none
-  transform: scale(1.05)
+    filter: none
+    transform: scale(1.05)
 
 
 .main-wrapper
@@ -92,11 +94,12 @@ p
   max-width: 1440px
   margin-left: auto
   margin-right: auto
+  display: none
 
 .video-wrapper
   position: relative
-  width: 80%
-  margin-left: 10%
+  width: 90%
+  margin-left: 5%
 
   video
     width: 100%
@@ -113,3 +116,70 @@ p
 
 .margin-bottom-15
   margin-bottom: 15px
+
+.loader-hidden
+  transform: translateY(-100%)
+
+.preload
+  width: 100%
+  height: 100vh
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 99999
+  background-color: $jaune
+  transition: all 1s
+
+
+  .bars-wrapper
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%)
+
+  .bar
+    width: 20px
+    height: 50px
+    display: inline-block
+    margin: 0 5px
+
+  .bar1
+    background-color: black
+    animation-name: preload
+    animation-duration: 2.5s
+    animation-iteration-count: infinite
+
+  .bar2
+    background-color: black
+    animation-name: preload
+    animation-duration: 2.5s
+    animation-iteration-count: infinite
+    animation-delay: 0.5s
+
+  .bar3
+    background-color: black
+    animation-name: preload
+    animation-duration: 2.5s
+    animation-iteration-count: infinite
+    animation-delay: 1s
+
+  .bar4
+    background-color: black
+    animation-name: preload
+    animation-duration: 2.5s
+    animation-iteration-count: infinite
+    animation-delay: 1.5s
+
+  .bar5
+    background-color: black
+    animation-name: preload
+    animation-duration: 2.5s
+    animation-iteration-count: infinite
+    animation-delay: 2s
+
+
+@keyframes preload
+  from, 40%, to
+    opacity: 1
+  20%
+    opacity: 0

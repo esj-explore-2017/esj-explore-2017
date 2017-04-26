@@ -127,7 +127,8 @@ p {
   width: 100%; }
 .intro .legend {
   font-style: italic;
-  font-size: 1.5em; }
+  font-size: 1.2em;
+  text-align: center; }
 .intro .legend-intro-1 {
   transform: translateY(-80%); }
   @media screen and (max-width: 768px) {
@@ -156,7 +157,7 @@ p {
   border-radius: 50%;
   opacity: 0.9; }
 .intro .exergue {
-  font-size: 1.8em;
+  font-size: 1.4em;
   text-align: center; }
 .intro .vertical-center {
   margin-top: 30%;
@@ -173,7 +174,7 @@ p {
 .intro .image {
   padding: 0; }
 .intro .infog-intro {
-  width: 90%; }
+  width: 80%; }
 .intro .video-intro {
   width: 90%; }
 .intro .medaillon {
@@ -200,7 +201,7 @@ p {
     .chap1 .cercle-exergue {
       display: none; } }
 .chap1 .exergue {
-  font-size: 1.5em;
+  font-size: 1.4em;
   text-align: center; }
 .chap1 .up {
   display: inline-block;
@@ -209,7 +210,8 @@ p {
   font-style: italic; }
 .chap1 .legend {
   font-style: italic;
-  font-size: 1.5em; }
+  font-size: 1.2em;
+  text-align: center; }
 .chap1 #home_ch1 {
   width: 100%;
   height: auto; }
@@ -247,7 +249,7 @@ p {
 
 .infog-arbre-wrapper {
   position: relative;
-  width: 80%;
+  width: 75%;
   margin-left: auto;
   margin-right: auto;
   border: solid black 2px;
@@ -436,7 +438,6 @@ p {
     .chap2 .FF .ff04 {
       width: 100%; }
     .chap2 .FF .bigimg-legend {
-      font-size: 12px;
       padding-left: -60px;
       padding-right: -60px;
       text-align: center;
@@ -461,12 +462,12 @@ p {
       position: absolute;
       z-index: 20;
       margin-top: 5px;
-      font-size: 1.5em;
+      font-size: 1.2em;
       text-align: center;
       left: 50%;
       transform: translateX(-50%); }
     .chap2 .FF .graph {
-      width: 90%;
+      width: 80%;
       margin-top: 50px; }
       @media screen and (max-width: 767px) {
         .chap2 .FF .graph {
@@ -649,7 +650,7 @@ p {
   background-image: url("../medias/Bart_Wellens_Bureau.mp4");
   background-attachment: fixed; }
 .chap3 .infographie {
-  width: 100%; }
+  width: 80%; }
 .chap3 .ch3_gif {
   width: 50%; }
 @media screen and (min-device-width: 768px) and (max-device-width: 991px) {
@@ -976,12 +977,12 @@ html, body {
 
 .legend {
   font-style: italic;
-  font-size: 1.3em;
+  font-size: 1.2em;
   text-align: center; }
 
 #navbar {
   padding-top: 10px;
-  background: linear-gradient(#debb15, #feea28);
+  background-color: #feea28;
   font-size: 1.8em;
   position: fixed;
   top: 0;
@@ -1017,23 +1018,26 @@ p {
   border: solid 5px #feea28;
   box-shadow: 5px 5px 3px black;
   margin-bottom: 15px;
-  filter: none;
-  transform: scale(1.05); }
+  max-width: 155px; }
   @media screen and (max-width: 991px) {
     .medaillon {
       max-width: 130px; } }
+  .medaillon:hover {
+    filter: none;
+    transform: scale(1.05); }
 
 .main-wrapper {
   width: 100%;
   overflow-x: hidden;
   max-width: 1440px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  display: none; }
 
 .video-wrapper {
   position: relative;
-  width: 80%;
-  margin-left: 10%; }
+  width: 90%;
+  margin-left: 5%; }
   .video-wrapper video {
     width: 100%; }
   .video-wrapper .miniature-video {
@@ -1047,5 +1051,63 @@ p {
 
 .margin-bottom-15 {
   margin-bottom: 15px; }
+
+.loader-hidden {
+  transform: translateY(-100%); }
+
+.preload {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  background-color: #feea28;
+  transition: all 1s; }
+  .preload .bars-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%); }
+  .preload .bar {
+    width: 20px;
+    height: 50px;
+    display: inline-block;
+    margin: 0 5px; }
+  .preload .bar1 {
+    background-color: black;
+    animation-name: preload;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite; }
+  .preload .bar2 {
+    background-color: black;
+    animation-name: preload;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s; }
+  .preload .bar3 {
+    background-color: black;
+    animation-name: preload;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s; }
+  .preload .bar4 {
+    background-color: black;
+    animation-name: preload;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 1.5s; }
+  .preload .bar5 {
+    background-color: black;
+    animation-name: preload;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s; }
+
+@keyframes preload {
+  from, 40%, to {
+    opacity: 1; }
+  20% {
+    opacity: 0; } }
 
 /*# sourceMappingURL=main.css.map */

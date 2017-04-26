@@ -43,6 +43,18 @@
           </div>
         </nav>
 
+        <!-- PRELOADER -->
+        <div class="preload">
+          <div class="bars-wrapper">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+            <div class="bar bar4"></div>
+            <div class="bar bar5"></div>
+          </div>
+
+        </div>
+
         <!--INTRO -->
 
         <div class="main-wrapper">
@@ -96,7 +108,7 @@
               <div class="row space" id = "carte-int-hack">
                 <div class="col-md-2 col-md-offset-3 text-center">
                   <img class="medaillon" src="medias/erwin.png" alt="Erwin Vervecken"/>
-                  <p>
+                  <p class='legend'>
                     Erwin Vervecken, concepteur du circuit Francorchamps.
                   </p>
                 </div>
@@ -161,7 +173,7 @@
               <div class="row">
                 <div class="col-md-2 col-md-offset-3 text-center">
                   <img class="medaillon" src="medias/bart.png" alt="Bart Demys"/>
-                  <p>
+                  <p class='legend'>
                     Bart Demys,<br /> supporter.
                   </p>
                 </div>
@@ -191,7 +203,7 @@
               <div class="row">
                 <div class="col-md-2 col-md-offset-4 text-center">
                   <img class="medaillon" src="medias/dirk.png" alt="Dirk Veingerhoets" />
-                  <p>
+                  <p class="legend">
                     Dirk Veingerhoets,<br /> supporter.
                   </p>
                 </div>
@@ -276,7 +288,7 @@
               <div class="row">
                 <div class="col-md-2 col-md-offset-3 col-sm-3 col-sm-offset-2 text-center">
                   <img class="medaillon" src="medias/ch1_medaillon1.png" alt="Gilberte Geysen"/>
-                  <p>
+                  <p class="legend">
                     Gilberte Geysen,<br /> habitante de Lille
                   </p>
                 </div>
@@ -289,7 +301,7 @@
               <div class="row">
                 <div class="col-md-2 col-md-offset-3 col-sm-3 col-sm-offset-2 text-center">
                   <img class="medaillon up" src="medias/ch1_medaillon2.png" alt="Paul Herijgers"/><!--PLACER MEDAILLON PLUS HAUT-->
-                  <p>
+                  <p class="legend">
                     Paul Herijgers,<br /> champion du monde 1994
                   </p>
                 </div>
@@ -320,7 +332,7 @@
                 <div class="col-md-6">
                   <img class="img-responsive" src="medias/ch1-infog-palmares.png" />
                 </div>
-                <div class="col-md-3 col-sm-6 col-sm-offset-3">
+                <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-3">
                   <p>
                     Au-delà de Lille, toute la Belgique peut s'enorgueillir des titres de ses cyclocrossmen. Avec Wout van Aert, c’est la 29e fois qu’un Belge est sacré en 67 Championnats du monde. Eric de Vlaeminck le premier, en 1966, a été couronné sept fois au total. En 1975, c’est au tour de son petit frère Roger, <span class="italic">« Monsieur Paris-Roubaix »</span>, plus connu pour ses exploits sur route. Plus tard, Roland Liboton décroche quatre médailles d’or. Tous ont contribué à faire de la Belgique la nation reine de la discipline. Dans ce palmarès, les Français ne sont pas loin. Les premières éditions des championnats du monde sont marquées du sceau tricolore : entre 1950 et 1958, le titre revient systématiquement à un coureur de l’Hexagone.
                   </p>
@@ -366,9 +378,9 @@
                     Qui dit équipes dédiées, dit professionnalisation des coureurs. Les Belges sont devenus les plus nombreux sur les starting lists. Comme à Belvaux, pour les Championnats du monde fin janvier, où ils étaient 10 coureurs inscrits sur 72 participants. Dans sa cabine vitrée, Michel Wuyts commente la discipline pour la télévision belge, comme depuis 23 ans. Entre deux courses, le journaliste se souvient : <span class="italic">« En 1998, on a pris la décision de retransmettre en direct la course à la télévision. Et ça été populaire tout de suite. »</span> Cette année-là, les Belges Mario de Clercq et Erwin Vervecken sont respectivement médaillés d’or et d’argent aux Championnats du monde. Depuis, les audiences atteignent régulièrement un million et demi de téléspectateurs, pour un territoire, les Flandres, qui ne compte que six millions d’habitants. Même les compétitions féminines ont déjà rassemblé plus d’un million de passionnés devant leur écran. <span class="italic">« Les Belges aiment voir des êtres humains dans la boue donner tout ce qu’ils ont, pendant qu’eux sont bien au chaud dans leur appartement »</span>, s’amuse Michel Wuyts. Et selon son confrère Guy van den Langenbergh, <span class="italic">« c’est un sport très compact, ça ne dure qu’une heure et il se passe toujours quelque chose. Alors qu’une étape du Tour de France, ça prend trois ou quatre heures d’émission durant lesquelles il ne se passe rien sauf dans les 20 derniers kilomètres. Le cyclo-cross, c’est la formule parfaite. »</span> Une saison de six mois, un épisode par semaine, les mêmes protagonistes à idolâtrer.
                   </p>
                 </div>
-                <div class="col-md-2 col-sm-6 col-sm-offset-3 text-center">
+                <div class="col-md-2 col-md-offset-0 col-sm-6 col-sm-offset-3 text-center">
                   <img class="medaillon" src="medias/ch1_medaillon3.png" alt="Michel Wuyts"/>
-                  <p>
+                  <p class="legend">
                     Michel Wuyts,<br /> commentateur du cyclo-cross
                   </p>
                 </div>
@@ -825,8 +837,10 @@
                 </div>
 
                 <div class="row chapitre3-video chap3-hack">
-                    <div class="col-md-12">
-                        <video controls src="medias/Bart_Wellens_Bureau.mp4" poster="medias/chap-3-miniature-video-2.png"></video>
+                    <div class="col-md-12 text-center">
+                      <div class="video-wrapper">
+                          <video controls src="medias/TaramacrazHoogstraten_Bureau.mp4" poster="medias/chap-3-miniature-video-1.png"</video>
+                      </div>
                     </div>
                 </div>
                 </div>
@@ -834,10 +848,10 @@
                     <div class="col-md-2 col-md-offset-2">
                         <div class="metier text-center">
                             <img class="medaillon" src="medias/medaillon1.png" alt="">
-                            <p>
-                                <span class='legend'>Hunter Veloz,
+                            <p class='legend'>
+                                Hunter Veloz,
                                 <br>
-                                mécanicien de la selection</span>
+                                mécanicien de la selection
                             </p>
                         </div>
                     </div>
@@ -886,7 +900,7 @@
                     <div class="row chapitre3-video">
                         <div class="col-xs-12">
                             <div class="video-wrapper">
-                                <video controls src="medias/TaramacrazHoogstraten_Bureau.mp4" poster="medias/chap-3-miniature-video-1.png"></video>
+                                <video controls src="medias/Bart_Wellens_Bureau.mp4" poster="medias/chap-3-miniature-video-2.png"></video>
                             </div>
                         </div>
                     </div>
@@ -899,15 +913,17 @@
                     </div>
                     <div class="col-md-2 col-md-offset-1 metier2 text-center">
                         <img src="medias/medaillon5.png" class="medaillon" alt="">
-                        <p>
-                            <span class="legend">Marc Herremans,
+                        <p class="legend">
+                            Marc Herremans,
                             <br>
-                             entraîneur de l'équipe Era</span>
+                             entraîneur de l'équipe Era
                         </p>
                     </div>
                 </div>
                 <div class="row">
+                  <div class="col-xs-12 text-center">
                     <img src="medias/infographie3.png" class="infographie" alt="">
+                  </div>
                 </div>
                 <div class="row chapitre3-partie8 chap3-hack">
                     <div class="col-md-4 col-md-offset-6 col-sm-10 col-sm-offset-1">
@@ -987,7 +1003,7 @@
             </div>
               <div class="col-md-2 col-sm-4 text-center" >
                 <img class="medaillon" src="medias/medaillon_ch4_guimard.png" />
-                <span class="legend"><p>Cyrille Guimard, <br />consultant, ancien coureur puis directeur sportif</p></span>
+                <p class="legend">Cyrille Guimard, <br />consultant, ancien coureur puis directeur sportif</p>
                 </div>
               </div>
 
@@ -1196,6 +1212,7 @@
     <script src="js/main.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
     <!-- <script src="js/chap2-carousel.js"></script> -->
 
     <script>
