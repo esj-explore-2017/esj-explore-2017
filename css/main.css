@@ -157,7 +157,8 @@ p {
   border-radius: 50%;
   opacity: 0.9; }
 .intro .exergue {
-  font-size: 1.4em;
+  font-size: 1.6em;
+  font-weight: bold;
   text-align: center; }
 .intro .vertical-center {
   margin-top: 30%;
@@ -201,7 +202,8 @@ p {
     .chap1 .cercle-exergue {
       display: none; } }
 .chap1 .exergue {
-  font-size: 1.4em;
+  font-size: 1.6em;
+  font-weight: bold;
   text-align: center; }
 .chap1 .up {
   display: inline-block;
@@ -246,6 +248,24 @@ p {
   width: 90%; }
 .chap1 .column {
   padding: 0 5px; }
+
+.soundcloud-container {
+  position: relative; }
+
+.soundcloud-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.ch1-last {
+  position: relative; }
+
+#ch1-last-legend {
+  position: absolute;
+  top: 65%;
+  left: 36%;
+  max-width: 85px; }
 
 .infog-arbre-wrapper {
   position: relative;
@@ -333,7 +353,7 @@ p {
   .chap2 #chap2-hack {
     transform: translate(-50%, 20px); }
   .chap2 #chap2-hack2 {
-    transform: translate(-50%, -50px); }
+    transform: translate(-50%, 0px); }
     @media screen and (min-device-width: 768px) and (max-device-width: 991px) {
       .chap2 #chap2-hack2 {
         width: 100px; } }
@@ -457,12 +477,13 @@ p {
       left: 50%;
       transform: translateX(-50%);
       z-index: -20;
-      width: 100px; }
+      width: 150px; }
     .chap2 .FF .legendrond-p {
       position: absolute;
       z-index: 20;
       margin-top: 5px;
-      font-size: 1.2em;
+      font-size: 1.6em;
+      font-weight: bold;
       text-align: center;
       left: 50%;
       transform: translateX(-50%); }
@@ -481,7 +502,7 @@ p {
       position: relative; }
     .chap2 .FF .doublelegend {
       position: absolute;
-      bottom: 250px;
+      bottom: 235px;
       padding-left: 40px;
       width: 80%;
       text-align: center;
@@ -569,6 +590,9 @@ p {
       .chap2 .ch2-diapo {
         opacity: 1; } }
 
+#ch2_hack_excergue {
+  transform: translate(-50%, 25px); }
+
 .chap3 .chap3-hack {
   padding-left: 15px;
   padding-right: 15px; }
@@ -588,10 +612,16 @@ p {
   background-image: url("../medias/triangle1sanstext.png");
   background-repeat: no-repeat;
   height: 800px;
-  background-position: right; }
+  background-position: right;
+  position: relative; }
   @media screen and (max-device-width: 767px) {
     .chap3 .chapitre3-triangle1 {
       display: none; } }
+.chap3 .ch3-legend-hack {
+  position: absolute;
+  width: 10%;
+  top: 71%;
+  left: 66%; }
 .chap3 .metier {
   text-align: center;
   margin-top: 80%; }
@@ -666,6 +696,8 @@ p {
   @media screen and (min-device-width: 768px) and (max-device-width: 991px) {
     .chap3 .juxtapose-wrapper {
       height: 500px; } }
+.chap3 .juxtapose-legend {
+  transform: translateY(-30px); }
 @media screen and (max-device-width: 767px) {
   .chap3 .chap3-profil-img {
     width: 100%;
@@ -848,9 +880,9 @@ p {
     .chap4 .cercle-exergue {
       display: none; } }
 .chap4 .exergue {
-  font-size: 1.4em;
+  font-size: 1.6em;
   text-align: center;
-  font-style: italic; }
+  font-weight: bold; }
 .chap4 a.lien-lexique {
   background-color: #FFEA29;
   color: #000; }
@@ -1004,7 +1036,7 @@ html, body {
       #navbar li {
         margin-right: 0; } }
 
-a {
+a, a:hover {
   color: black;
   font-weight: bold; }
 
@@ -1031,8 +1063,7 @@ p {
   overflow-x: hidden;
   max-width: 1440px;
   margin-left: auto;
-  margin-right: auto;
-  display: none; }
+  margin-right: auto; }
 
 .video-wrapper {
   position: relative;
@@ -1051,6 +1082,9 @@ p {
 
 .margin-bottom-15 {
   margin-bottom: 15px; }
+
+.hack-exergue {
+  transform: translateY(20px); }
 
 .loader-hidden {
   transform: translateY(-100%); }

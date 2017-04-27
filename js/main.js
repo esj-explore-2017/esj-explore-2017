@@ -3,15 +3,15 @@ $(document).ready(function(){
 
 
 //PRELOADING
-$('.main-wrapper').imagesLoaded( function(){
-  $('.preload').addClass('loader-hidden');
-  $('.main-wrapper').show();
+// $('.main-wrapper').imagesLoaded( function(){
+//   $('.preload').addClass('loader-hidden');
+//   $('.main-wrapper').show();
     $(window).scroll(function() {
       if ($(window).scrollTop() > $('#intro').height()-100){
          $(".lexique-wrapper").css('opacity', '1')
        }
      });
-})
+// })
 
 
 //GESTION LEXIQUE
