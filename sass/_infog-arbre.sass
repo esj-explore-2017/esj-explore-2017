@@ -3,7 +3,7 @@
   width: 75%
   margin-left: auto
   margin-right: auto
-  border : solid black 2px
+  border : solid #ccc 2px
   overflow: hidden
 
 
@@ -30,7 +30,9 @@
 .infog-btn-effect-wrapper
   position: absolute
   border-radius: 50%
-
+  @media screen and (max-width: 767px)
+    display: none
+  
 .infog-btn-effect
   position: absolute
   top: 0

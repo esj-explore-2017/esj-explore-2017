@@ -104,7 +104,7 @@
   .cercle-exergue
     width: 150px
     height: 150px
-    background-color: #feea28
+    background-color: $jaune2
     border-radius: 50%
     opacity: 0.9
     @media screen and (max-width: 768px)
@@ -153,3 +153,7 @@
   display: block
   float: right
   transform: translate(-30px, -150px)
+
+.desktop-only
+  @media screen and (max-width: 767px)
+    display: none        

@@ -10,8 +10,7 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px;
-  border: solid 4px #feea28; }
+  padding: 10px; }
   @media screen and (max-width: 768px) {
     .carte-int-wrapper {
       display: none; } }
@@ -129,6 +128,9 @@ p {
   font-style: italic;
   font-size: 1.2em;
   text-align: center; }
+  @media screen and (max-width: 767px) {
+    .intro .legend {
+      font-size: 1em; } }
 .intro .legend-intro-1 {
   transform: translateY(-80%); }
   @media screen and (max-width: 768px) {
@@ -153,7 +155,7 @@ p {
 .intro .cercle-exergue {
   width: 150px;
   height: 150px;
-  background-color: #feea28;
+  background-color: #FEF27E;
   border-radius: 50%;
   opacity: 0.9; }
 .intro .exergue {
@@ -195,9 +197,11 @@ p {
 .chap1 .cercle-exergue {
   width: 150px;
   height: 150px;
-  background-color: #feea28;
+  background-color: #FEF27E;
   border-radius: 50%;
-  opacity: 0.9; }
+  opacity: 0.9;
+  margin-left: auto;
+  margin-right: auto; }
   @media screen and (max-width: 768px) {
     .chap1 .cercle-exergue {
       display: none; } }
@@ -214,6 +218,9 @@ p {
   font-style: italic;
   font-size: 1.2em;
   text-align: center; }
+  @media screen and (max-width: 767px) {
+    .chap1 .legend {
+      font-size: 1em; } }
 .chap1 #home_ch1 {
   width: 100%;
   height: auto; }
@@ -257,6 +264,9 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
+  @media screen and (max-width: 767px) {
+    .soundcloud-wrapper {
+      display: none; } }
 
 .ch1-last {
   position: relative; }
@@ -272,7 +282,7 @@ p {
   width: 75%;
   margin-left: auto;
   margin-right: auto;
-  border: solid black 2px;
+  border: solid #ccc 2px;
   overflow: hidden; }
 
 .infog-arbre-bg {
@@ -298,6 +308,9 @@ p {
 .infog-btn-effect-wrapper {
   position: absolute;
   border-radius: 50%; }
+  @media screen and (max-width: 767px) {
+    .infog-btn-effect-wrapper {
+      display: none; } }
 
 .infog-btn-effect {
   position: absolute;
@@ -364,12 +377,14 @@ p {
       @media (max-device-width: 991px) {
         .chap2 #ch2-hack-medaillon:hover {
           transform: scale(1.05); } }
-  @media screen and (min-device-width: 768px) and (max-device-width: 991px) {
-    .chap2 #ch2-doublep-hack2 {
-      width: 100%;
-      padding: 0 15px;
-      text-align: left;
-      top: 200px; } }
+  .chap2 #ch2-doublep-hack2 {
+    transform: translateY(25%); }
+    @media screen and (min-device-width: 768px) and (max-device-width: 991px) {
+      .chap2 #ch2-doublep-hack2 {
+        width: 100%;
+        padding: 0 15px;
+        text-align: left;
+        top: 200px; } }
   .chap2 .FF {
     width: 100%;
     margin: 0px;
@@ -593,6 +608,9 @@ p {
 #ch2_hack_excergue {
   transform: translate(-50%, 25px); }
 
+#chap2-hack3 {
+  margin-top: 20px; }
+
 .chap3 .chap3-hack {
   padding-left: 15px;
   padding-right: 15px; }
@@ -636,7 +654,7 @@ p {
   background-size: 50%;
   background-repeat: no-repeat; }
 .chap3 .apres {
-  background-image: url("../medias/AprèsJuxtapose.jpg");
+  background-image: url("../medias/Apr├¿sJuxtapose.jpg");
   background-attachment: fixed;
   background-size: cover;
   height: 800px;
@@ -665,12 +683,11 @@ p {
   @media screen and (max-device-width: 767px) {
     .chap3 .metier2 {
       margin-top: 0; } }
-.chap3 .chapitre3-partie6 {
-  background-image: url("../medias/rectanglegris3.png"); }
 .chap3 .chapitre3-partie8 {
   background-image: url("../medias/triangle6.png");
   background-repeat: no-repeat;
-  background-position: bottom; }
+  background-position: bottom;
+  padding-bottom: 350px; }
   @media screen and (max-device-width: 767px) {
     .chap3 .chapitre3-partie8 {
       background: none; } }
@@ -683,6 +700,9 @@ p {
   width: 80%; }
 .chap3 .ch3_gif {
   width: 50%; }
+@media screen and (min-width: 1300px) {
+  .chap3 .ch3-hack-p {
+    transform: translateY(90%); } }
 @media screen and (min-device-width: 768px) and (max-device-width: 991px) {
   .chap3 .ch3-hack-p {
     width: 50%;
@@ -873,7 +893,7 @@ p {
 .chap4 .cercle-exergue {
   width: 150px;
   height: 150px;
-  background-color: #feea28;
+  background-color: #FEF27E;
   border-radius: 50%;
   opacity: 0.9; }
   @media screen and (max-width: 768px) {
@@ -918,6 +938,10 @@ p {
   display: block;
   float: right;
   transform: translate(-30px, -150px); }
+
+@media screen and (max-width: 767px) {
+  .desktop-only {
+    display: none; } }
 
 .lexique-wrapper {
   position: fixed;
@@ -1016,6 +1040,9 @@ html, body {
   font-style: italic;
   font-size: 1.2em;
   text-align: center; }
+  @media screen and (max-width: 767px) {
+    .legend {
+      font-size: 1em; } }
 
 #navbar {
   padding-top: 10px;
@@ -1026,7 +1053,7 @@ html, body {
   left: 0;
   z-index: 100;
   width: 100%;
-  border-bottom: solid black 2px; }
+  border-bottom: solid #FEF27E 2px; }
   @media screen and (max-width: 767px) {
     #navbar .logo {
       width: 200px;
@@ -1083,10 +1110,10 @@ p {
     top: 0; }
 
 .margin-top-15 {
-  margin-top: 15px; }
+  margin-top: 50px; }
 
 .margin-bottom-15 {
-  margin-bottom: 15px; }
+  margin-bottom: 50px; }
 
 .hack-exergue {
   transform: translateY(20px); }
@@ -1148,5 +1175,12 @@ p {
     opacity: 1; }
   20% {
     opacity: 0; } }
+.zone-grise-wrapper {
+  position: relative; }
+
+.zone-grise-intro {
+  position: absolute;
+  top: 0%;
+  left: 0%; }
 
 /*# sourceMappingURL=main.css.map */

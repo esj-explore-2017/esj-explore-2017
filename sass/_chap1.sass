@@ -7,9 +7,11 @@
   .cercle-exergue
     width: 150px
     height: 150px
-    background-color: #feea28
+    background-color: $jaune2
     border-radius: 50%
     opacity: 0.9
+    margin-left: auto
+    margin-right: auto
     @media screen and (max-width: 768px)
       display: none
 
@@ -30,6 +32,8 @@
     font-style: italic
     font-size: 1.2em
     text-align: center
+    @media screen and (max-width: 767px)
+      font-size: 1em
 
   // Images
   #home_ch1
@@ -86,6 +90,8 @@
   top: 50%
   left: 50%
   transform: translate(-50%, -50%)
+  @media screen and (max-width: 767px)
+    display: none
 
 .ch1-last
   position: relative

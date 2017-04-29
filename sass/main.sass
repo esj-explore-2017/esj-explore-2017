@@ -1,4 +1,5 @@
 $jaune: #feea28
+$jaune2: #FEF27E
 
 @font-face
   font-family: 'Futura T Light'
@@ -31,6 +32,8 @@ html, body
   font-style: italic
   font-size: 1.2em
   text-align: center
+  @media screen and (max-width: 767px)
+    font-size: 1em
 
 #navbar
   padding-top: 10px
@@ -42,7 +45,7 @@ html, body
   left: 0
   z-index: 100
   width: 100%
-  border-bottom: solid black 2px
+  border-bottom: solid $jaune2 2px
   .logo
     @media screen and (max-width: 767px)
       width: 200px
@@ -95,6 +98,10 @@ p
   margin-left: auto
   margin-right: auto
   // display: none
+  @media screen and (min-width: 1440px)
+    // border-left: solid black 2px
+    // border-right: solid black 2px
+
 
 .video-wrapper
   position: relative
@@ -112,10 +119,10 @@ p
     top: 0
 
 .margin-top-15
-  margin-top: 15px
+  margin-top: 50px
 
 .margin-bottom-15
-  margin-bottom: 15px
+  margin-bottom: 50px
 
 .hack-exergue
   transform: translateY(20px)
@@ -186,3 +193,11 @@ p
     opacity: 1
   20%
     opacity: 0
+
+.zone-grise-wrapper
+  position: relative
+
+.zone-grise-intro
+  position: absolute
+  top: 0%
+  left: 0%
