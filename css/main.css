@@ -914,6 +914,11 @@ p {
     .chap4 .juxtapose-wrapper {
       height: 300px; } }
 
+.lastimg-legend {
+  display: block;
+  float: right;
+  transform: translate(-30px, -150px); }
+
 .lexique-wrapper {
   position: fixed;
   opacity: 0;
