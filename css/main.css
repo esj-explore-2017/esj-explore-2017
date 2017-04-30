@@ -1075,7 +1075,7 @@ html, body {
       #navbar li {
         margin-right: 0; } }
 
-a, a:hover {
+nav a, nav a:hover {
   color: black;
   font-weight: bold;
   border-right: solid black 1px;
