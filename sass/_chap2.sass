@@ -24,7 +24,8 @@
         transform: scale(1.05)
 
   #ch2-doublep-hack2
-    transform: translate(-75%,25%)
+    @screen and (min-width: 992px)
+      transform: translate(-75%,25%)
     @media screen and (min-device-width: 768px) and (max-device-width: 991px)
       width: 100%
       padding: 0 15px
@@ -145,7 +146,7 @@
       @media (max-device-width: 991px)
         text-align: center
         margin-top: 120px
-      @media (max-device-width: 360px)
+      @media (max-device-width: 767px)
         display: none
 
 
@@ -231,7 +232,7 @@
     .double02
       width: 100%
       position: relative
-      @media (max-device-width: 360px)
+      @media screen and (max-device-width: 767px)
         display: none
 
     .legend1
@@ -285,3 +286,7 @@
 
 #palmares
   width: 70%
+
+#lasthack
+  @media screen and (max-width: 767px)
+    display: none

@@ -375,14 +375,15 @@ p {
       @media (max-device-width: 991px) {
         .chap2 #ch2-hack-medaillon:hover {
           transform: scale(1.05); } }
+@screen and (min-width: 992px) {
   .chap2 #ch2-doublep-hack2 {
-    transform: translate(-75%, 25%); }
-    @media screen and (min-device-width: 768px) and (max-device-width: 991px) {
-      .chap2 #ch2-doublep-hack2 {
-        width: 100%;
-        padding: 0 15px;
-        text-align: left;
-        top: 200px; } }
+    transform: translate(-75%, 25%); } }
+  @media screen and (min-device-width: 768px) and (max-device-width: 991px) {
+    .chap2 #ch2-doublep-hack2 {
+      width: 100%;
+      padding: 0 15px;
+      text-align: left;
+      top: 200px; } }
   .chap2 .FF {
     width: 100%;
     margin: 0px;
@@ -482,7 +483,7 @@ p {
         .chap2 .FF .legendrond {
           text-align: center;
           margin-top: 120px; } }
-      @media (max-device-width: 360px) {
+      @media (max-device-width: 767px) {
         .chap2 .FF .legendrond {
           display: none; } }
     .chap2 .FF .legendrond-img {
@@ -560,7 +561,7 @@ p {
     .chap2 .FF .double02 {
       width: 100%;
       position: relative; }
-      @media (max-device-width: 360px) {
+      @media screen and (max-device-width: 767px) {
         .chap2 .FF .double02 {
           display: none; } }
     .chap2 .FF .legend1 {
@@ -612,6 +613,10 @@ p {
 #palmares {
   width: 70%; }
 
+@media screen and (max-width: 767px) {
+  #lasthack {
+    display: none; } }
+
 .chap3 .chap3-hack {
   padding-left: 15px;
   padding-right: 15px; }
@@ -655,7 +660,7 @@ p {
   background-size: 50%;
   background-repeat: no-repeat; }
 .chap3 .apres {
-  background-image: url("../medias/Apr├¿sJuxtapose.jpg");
+  background-image: url("../medias/AprèsJuxtapose.jpg");
   background-attachment: fixed;
   background-size: cover;
   height: 800px;
@@ -1210,5 +1215,9 @@ p {
   width: 100%;
   transform: translateY(56%);
   z-index: 1; }
+
+.credits {
+  width: 100%;
+  max-width: 1440px; }
 
 /*# sourceMappingURL=main.css.map */
