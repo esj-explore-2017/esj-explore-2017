@@ -37,15 +37,14 @@ html, body
 
 #navbar
   padding-top: 10px
-  background-color: $jaune
-  // background: linear-gradient(#debb15, $jaune)
+  background: linear-gradient(#f4f4f4, white)
   font-size: 1.8em
   position: fixed
   top: 0
   left: 0
   z-index: 100
   width: 100%
-  border-bottom: solid $jaune2 2px
+  // border-bottom: solid $jaune2 2px
   .logo
     @media screen and (max-width: 767px)
       width: 200px
@@ -63,6 +62,9 @@ html, body
 a, a:hover
   color: black
   font-weight: bold
+  border-right: solid black 1px
+  padding-right: 10px
+
 
 
 
@@ -81,7 +83,6 @@ p
   transition: all 0.5s
   border-radius: 50%
   border : solid 5px $jaune
-  box-shadow: 5px 5px 3px black
   margin-bottom: 15px
   max-width: 155px
   @media screen and (max-width: 991px)
@@ -93,7 +94,7 @@ p
 
 .main-wrapper
   width: 100%
-  overflow-x: hidden
+  overflow: hidden
   max-width: 1440px
   margin-left: auto
   margin-right: auto
@@ -197,7 +198,37 @@ p
 .zone-grise-wrapper
   position: relative
 
+
 .zone-grise-intro
   position: absolute
   top: 0%
   left: 0%
+  width: 100%
+
+.zone-grise-ch4
+  position: absolute
+  top: 0%
+  left: 0%
+  width: 100%
+  transform: translateY(-32%)
+  z-index: 1
+
+.zone-grise-intro2
+  position: absolute
+  top: 0%
+  left: 0%
+  width: 100%
+  transform: translateY(74.5%)
+  z-index: 5
+
+.zone-grise-ch4-2
+  position: absolute
+  top: 0%
+  left: 0%
+  width: 100%
+  transform: translateY(56%)
+  z-index: 1
+
+.credits
+  width: 100%
+  max-width: 1440px

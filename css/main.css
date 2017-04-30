@@ -185,7 +185,6 @@ p {
   margin-top: 30px;
   border-radius: 50%;
   border: solid 5px #feea28;
-  box-shadow: 5px 5px 3px black;
   transition: 0.5s; }
   @media screen and (max-width: 992px) {
     .intro .medaillon {
@@ -231,7 +230,6 @@ p {
   margin-top: 30px;
   border-radius: 50%;
   border: solid 5px #feea28;
-  box-shadow: 5px 5px 3px black;
   transition: 0.5s; }
 @media screen and (max-width: 992px) {
   .chap1 .medaillon {
@@ -378,7 +376,7 @@ p {
         .chap2 #ch2-hack-medaillon:hover {
           transform: scale(1.05); } }
   .chap2 #ch2-doublep-hack2 {
-    transform: translateY(25%); }
+    transform: translate(-75%, 25%); }
     @media screen and (min-device-width: 768px) and (max-device-width: 991px) {
       .chap2 #ch2-doublep-hack2 {
         width: 100%;
@@ -611,6 +609,9 @@ p {
 #chap2-hack3 {
   margin-top: 20px; }
 
+#palmares {
+  width: 70%; }
+
 .chap3 .chap3-hack {
   padding-left: 15px;
   padding-right: 15px; }
@@ -819,12 +820,15 @@ p {
 .chap4 .chap4-hack {
   padding-left: 0;
   padding-right: 0; }
-@media screen and (max-device-width: 767px) {
-  .chap4 .triangle-selle {
-    display: none; } }
-@media screen and (min-device-width: 768px) and (max-device-width: 991px) {
-  .chap4 .triangle-selle {
-    float: right; } }
+.chap4 .triangle-selle {
+  position: relative;
+  z-index: 2; }
+  @media screen and (max-device-width: 767px) {
+    .chap4 .triangle-selle {
+      display: none; } }
+  @media screen and (min-device-width: 768px) and (max-device-width: 991px) {
+    .chap4 .triangle-selle {
+      float: right; } }
 .chap4 #home_ch_4 {
   position: relative;
   z-index: 2; }
@@ -856,7 +860,6 @@ p {
   margin-top: 30px;
   border-radius: 50%;
   border: solid 5px #feea28;
-  box-shadow: 5px 5px 3px black;
   filter: grayscale(40%);
   transition: 0.5s; }
 .chap4 .medaillon:hover {
@@ -1046,14 +1049,13 @@ html, body {
 
 #navbar {
   padding-top: 10px;
-  background-color: #feea28;
+  background: linear-gradient(#f4f4f4, white);
   font-size: 1.8em;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
-  width: 100%;
-  border-bottom: solid #FEF27E 2px; }
+  width: 100%; }
   @media screen and (max-width: 767px) {
     #navbar .logo {
       width: 200px;
@@ -1070,7 +1072,9 @@ html, body {
 
 a, a:hover {
   color: black;
-  font-weight: bold; }
+  font-weight: bold;
+  border-right: solid black 1px;
+  padding-right: 10px; }
 
 p {
   font-family: "Futura T Light", sans-serif; }
@@ -1080,7 +1084,6 @@ p {
   transition: all 0.5s;
   border-radius: 50%;
   border: solid 5px #feea28;
-  box-shadow: 5px 5px 3px black;
   margin-bottom: 15px;
   max-width: 155px; }
   @media screen and (max-width: 991px) {
@@ -1092,7 +1095,7 @@ p {
 
 .main-wrapper {
   width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto; }
@@ -1181,6 +1184,31 @@ p {
 .zone-grise-intro {
   position: absolute;
   top: 0%;
-  left: 0%; }
+  left: 0%;
+  width: 100%; }
+
+.zone-grise-ch4 {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  transform: translateY(-32%);
+  z-index: 1; }
+
+.zone-grise-intro2 {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  transform: translateY(74.5%);
+  z-index: 5; }
+
+.zone-grise-ch4-2 {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  transform: translateY(56%);
+  z-index: 1; }
 
 /*# sourceMappingURL=main.css.map */
